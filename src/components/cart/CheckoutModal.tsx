@@ -59,10 +59,18 @@ export default function CheckoutModal({
   useEffect(() => {
     if (!sdkReady || mountedRef.current) return;
 
-    const publicKey = process.env.NEXT_PUBLIC_CLOVER_PUBLIC_KEY;
-    const merchantId = process.env.NEXT_PUBLIC_CLOVER_MERCHANT_ID;
+    // NEXT_PUBLIC_ vars must be accessed as literal strings (Next.js inlines at build time)
+    const publicKey = process.env.NEXT_PUBLIC_CLOVER_PUBLIC_KEY || "";
+    const merchantId = process.env.NEXT_PUBLIC_CLOVER_MERCHANT_ID || "";
 
-    if (!publicKey || !merchantId || !window.Clover) return;
+    if (!publicKey || !merchantId) {
+      console.error("Clover env vars missing:", { publicKey: !!publicKey, merchantId: !!merchantId });
+      return;
+    }
+    if (!window.Clover) {
+      console.error("Clover SDK not loaded on window");
+      return;
+    }
 
     mountedRef.current = true;
     const clover = new window.Clover(publicKey, { merchantId });
