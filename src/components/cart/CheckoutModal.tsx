@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import CloverSDK from "./CloverSDK";
+import { useEffect, useRef, useState, useCallback } from "react";
+import Script from "next/script";
 
 export interface CheckoutModalProps {
   items: Array<{ name: string; price: number; quantity: number }>;
@@ -41,6 +41,9 @@ type PaymentState = "idle" | "processing" | "success" | "error";
 
 const IFRAME_STYLES = { input: { fontSize: "16px", color: "#0F172A" } };
 
+const PUBLIC_KEY = process.env.NEXT_PUBLIC_CLOVER_PUBLIC_KEY || "";
+const MERCHANT_ID = process.env.NEXT_PUBLIC_CLOVER_MERCHANT_ID || "";
+
 export default function CheckoutModal({
   items,
   total,
@@ -51,29 +54,23 @@ export default function CheckoutModal({
   const mountedRef = useRef(false);
   const [paymentState, setPaymentState] = useState<PaymentState>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
-  const [sdkReady, setSdkReady] = useState(false);
 
   const totalCents = Math.round(total);
 
-  // Initialize Clover SDK and mount iframe elements once SDK script loads
-  useEffect(() => {
-    if (!sdkReady || mountedRef.current) return;
-
-    // NEXT_PUBLIC_ vars must be accessed as literal strings (Next.js inlines at build time)
-    const publicKey = process.env.NEXT_PUBLIC_CLOVER_PUBLIC_KEY || "";
-    const merchantId = process.env.NEXT_PUBLIC_CLOVER_MERCHANT_ID || "";
-
-    if (!publicKey || !merchantId) {
-      console.error("Clover env vars missing:", { publicKey: !!publicKey, merchantId: !!merchantId });
+  const initClover = useCallback(() => {
+    if (mountedRef.current) return;
+    if (!PUBLIC_KEY || !MERCHANT_ID) {
+      console.error("Clover env vars missing. PUBLIC_KEY:", !!PUBLIC_KEY, "MERCHANT_ID:", !!MERCHANT_ID);
       return;
     }
     if (!window.Clover) {
-      console.error("Clover SDK not loaded on window");
+      console.error("window.Clover not available after SDK load");
       return;
     }
 
     mountedRef.current = true;
-    const clover = new window.Clover(publicKey, { merchantId });
+    console.log("Initializing Clover SDK...");
+    const clover = new window.Clover(PUBLIC_KEY, { merchantId: MERCHANT_ID });
     cloverRef.current = clover;
 
     const elements = clover.elements();
@@ -86,7 +83,15 @@ export default function CheckoutModal({
     cardDate.mount("#card-date");
     cardCvv.mount("#card-cvv");
     cardPostalCode.mount("#card-postal-code");
-  }, [sdkReady]);
+    console.log("Clover iframes mounted");
+  }, []);
+
+  // If SDK was already loaded (cached), init immediately
+  useEffect(() => {
+    if (window.Clover && !mountedRef.current) {
+      initClover();
+    }
+  }, [initClover]);
 
   async function handlePay() {
     const clover = cloverRef.current;
@@ -102,7 +107,7 @@ export default function CheckoutModal({
     let tokenResult: CloverTokenResult;
     try {
       tokenResult = await clover.createToken();
-    } catch (err: unknown) {
+    } catch {
       setErrorMessage("Failed to read card details. Please try again.");
       setPaymentState("error");
       return;
@@ -156,32 +161,24 @@ export default function CheckoutModal({
 
   return (
     <>
-      <CloverSDK />
-      {/* Inject a global handler so we know when the SDK script is ready */}
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function poll() {
-              if (window.Clover) {
-                document.dispatchEvent(new Event('clover-sdk-ready'));
-              } else {
-                setTimeout(poll, 100);
-              }
-            })();
-          `,
+      <Script
+        src="https://checkout.sandbox.dev.clover.com/sdk.js"
+        strategy="afterInteractive"
+        onLoad={() => {
+          console.log("Clover SDK script loaded");
+          initClover();
+        }}
+        onError={() => {
+          console.error("Failed to load Clover SDK script");
         }}
       />
-      {/* Listen for SDK ready event */}
-      <SdkReadyListener onReady={() => setSdkReady(true)} />
 
       <div className="checkout-overlay" role="dialog" aria-modal="true" aria-label="Checkout">
         <div className="checkout-card">
-          {/* Demo banner */}
           <div className="checkout-demo-banner">
             DEMO MODE — No real charges
           </div>
 
-          {/* Header */}
           <div className="checkout-header">
             <h2 className="checkout-title">Complete Your Order</h2>
             <button
@@ -193,7 +190,6 @@ export default function CheckoutModal({
             </button>
           </div>
 
-          {/* Order summary */}
           <div className="checkout-summary">
             <h3 className="checkout-summary-heading">Order Summary</h3>
             <ul className="checkout-items">
@@ -214,37 +210,28 @@ export default function CheckoutModal({
             </div>
           </div>
 
-          {/* Payment form */}
           {paymentState !== "success" && (
             <div className="checkout-form">
               <h3 className="checkout-form-heading">Payment Details</h3>
 
               <div className="clover-field-group">
-                <label className="clover-label" htmlFor="card-number">
-                  Card Number
-                </label>
+                <label className="clover-label">Card Number</label>
                 <div id="card-number" className="clover-field" />
               </div>
 
               <div className="clover-field-row">
                 <div className="clover-field-group">
-                  <label className="clover-label" htmlFor="card-date">
-                    Expiry Date
-                  </label>
+                  <label className="clover-label">Expiry Date</label>
                   <div id="card-date" className="clover-field" />
                 </div>
                 <div className="clover-field-group">
-                  <label className="clover-label" htmlFor="card-cvv">
-                    CVV
-                  </label>
+                  <label className="clover-label">CVV</label>
                   <div id="card-cvv" className="clover-field" />
                 </div>
               </div>
 
               <div className="clover-field-group">
-                <label className="clover-label" htmlFor="card-postal-code">
-                  ZIP Code
-                </label>
+                <label className="clover-label">ZIP Code</label>
                 <div id="card-postal-code" className="clover-field" />
               </div>
 
@@ -268,7 +255,6 @@ export default function CheckoutModal({
             </div>
           )}
 
-          {/* Success state */}
           {paymentState === "success" && (
             <div className="checkout-success" role="status">
               <div className="checkout-success-icon" aria-hidden="true">
@@ -284,19 +270,4 @@ export default function CheckoutModal({
       </div>
     </>
   );
-}
-
-// Small helper to listen for SDK ready event without adding state to the parent
-function SdkReadyListener({ onReady }: { readonly onReady: () => void }) {
-  useEffect(() => {
-    function handler() {
-      onReady();
-    }
-    document.addEventListener("clover-sdk-ready", handler, { once: true });
-    return () => {
-      document.removeEventListener("clover-sdk-ready", handler);
-    };
-  }, [onReady]);
-
-  return null;
 }
