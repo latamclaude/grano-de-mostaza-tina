@@ -9,7 +9,7 @@
       "backgroundImage": "/images/yelp-17-sauces-arepas.jpg",
       "ctaTextEs": "Ordena Ahora",
       "ctaTextEn": "Order Now",
-      "ctaUrl": "/es/menu"
+      "ctaUrl": "/menu"
     },
     {
       "_template": "ratingBadges"
