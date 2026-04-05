@@ -6,6 +6,7 @@ import Script from "next/script";
 export interface CheckoutModalProps {
   items: Array<{ name: string; price: number; quantity: number }>;
   total: number;
+  locale: "es" | "en";
   onClose: () => void;
   onSuccess: () => void;
 }
@@ -47,6 +48,7 @@ const MERCHANT_ID = process.env.NEXT_PUBLIC_CLOVER_MERCHANT_ID || "";
 export default function CheckoutModal({
   items,
   total,
+  locale,
   onClose,
   onSuccess,
 }: CheckoutModalProps) {
@@ -150,9 +152,6 @@ export default function CheckoutModal({
       }
 
       setPaymentState("success");
-      setTimeout(() => {
-        onSuccess();
-      }, 2000);
     } catch {
       setErrorMessage("Network error. Please check your connection and try again.");
       setPaymentState("error");
@@ -260,10 +259,20 @@ export default function CheckoutModal({
               <div className="checkout-success-icon" aria-hidden="true">
                 &#10003;
               </div>
-              <p className="checkout-success-message">Order placed!</p>
-              <p className="checkout-success-sub">
-                Thank you — we&apos;ll have it ready for you shortly.
+              <p className="checkout-success-message">
+                {locale === "es" ? "¡Pedido realizado!" : "Order placed!"}
               </p>
+              <p className="checkout-success-sub">
+                {locale === "es"
+                  ? "Gracias — lo tendremos listo para ti pronto."
+                  : "Thank you — we'll have it ready for you shortly."}
+              </p>
+              <button
+                className="btn btn-primary checkout-thank-btn"
+                onClick={onSuccess}
+              >
+                {locale === "es" ? "¡Gracias!" : "Thank You!"}
+              </button>
             </div>
           )}
         </div>

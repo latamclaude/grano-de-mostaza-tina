@@ -75,6 +75,7 @@ export function Header({ locale }: HeaderProps) {
         <CheckoutModal
           items={items}
           total={getTotal()}
+          locale={locale}
           onClose={() => setCheckoutOpen(false)}
           onSuccess={handleCheckoutSuccess}
         />

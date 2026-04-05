@@ -921,16 +921,21 @@ ul { list-style: none; }
   letter-spacing: 0.5px;
 }
 .clover-field {
-  border: 1.5px solid #CBD5E1;
+  border: 2px solid #CBD5E1;
   border-radius: 8px;
-  padding: 12px;
+  padding: 0 12px;
   background: #F8FAFC;
-  min-height: 44px;
+  height: 48px;
+  overflow: hidden;
   transition: border-color 0.2s;
+}
+.clover-field iframe {
+  height: 48px !important;
 }
 .clover-field:focus-within {
   border-color: var(--brand-primary);
   background: #fff;
+  box-shadow: 0 0 0 3px rgba(154, 52, 18, 0.1);
 }
 .clover-field-row {
   display: grid;
@@ -1024,6 +1029,13 @@ ul { list-style: none; }
   font-family: var(--font-body);
   font-size: 0.9rem;
   color: #64748B;
+  margin-bottom: 24px;
+}
+.checkout-thank-btn {
+  margin-top: 8px;
+  width: 100%;
+  padding: 16px;
+  font-size: 1.1rem;
 }
 
 /* ===== CART ICON ===== */
