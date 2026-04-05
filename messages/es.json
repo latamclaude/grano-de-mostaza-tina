@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "menu": "Menú",
+    "about": "Nosotros",
+    "catering": "Catering",
+    "faq": "Preguntas",
+    "contact": "Contacto"
+  },
+  "common": {
+    "orderNow": "Ordena Ahora",
+    "callUs": "Llámanos",
+    "viewMenu": "Ver Menú",
+    "readMore": "Leer Más",
+    "close": "Cerrar",
+    "open": "Abrir",
+    "hours": "Horario",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "followUs": "Síguenos",
+    "allRightsReserved": "Todos los derechos reservados",
+    "popular": "Popular",
+    "stars": "estrellas"
+  },
+  "footer": {
+    "tagline": "Sabor venezolano auténtico en Fort Lauderdale",
+    "copyright": "© {year} Grano De Mostaza. Todos los derechos reservados."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "restaurantName": "Grano De Mostaza",
+  "phone": "(954) 731-9838",
+  "address": "5550 NW 31st Ave, Fort Lauderdale, FL 33309",
+  "cloverOrderUrl": "/menu",
+  "googleMapsLat": 26.1943106,
+  "googleMapsLng": -80.1875758,
+  "instagram": "https://www.instagram.com/restgranodemostaza/",
+  "facebook": "https://www.facebook.com/people/Grano-De-Mostaza/100063634687013/",
+  "hours": [
+    { "es": "Lunes–Viernes: 6am–3pm", "en": "Monday–Friday: 6am–3pm" },
+    { "es": "Sábado: 7am–2pm", "en": "Saturday: 7am–2pm" },
+    { "es": "Domingo: Cerrado", "en": "Sunday: Closed" }
+  ],
+  "ratings": {
+    "google": { "score": 4.3, "count": 285 },
+    "yelp": { "score": 4.4, "count": 34 },
+    "menupix": { "score": 4.7, "count": 13 }
+  }
+}

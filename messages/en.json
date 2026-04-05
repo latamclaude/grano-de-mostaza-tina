@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About",
+    "catering": "Catering",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "common": {
+    "orderNow": "Order Now",
+    "callUs": "Call Us",
+    "viewMenu": "View Menu",
+    "readMore": "Read More",
+    "close": "Close",
+    "open": "Open",
+    "hours": "Hours",
+    "phone": "Phone",
+    "address": "Address",
+    "followUs": "Follow Us",
+    "allRightsReserved": "All rights reserved",
+    "popular": "Popular",
+    "stars": "stars"
+  },
+  "footer": {
+    "tagline": "Authentic Venezuelan flavor in Fort Lauderdale",
+    "copyright": "© {year} Grano De Mostaza. All rights reserved."
+  }
+}

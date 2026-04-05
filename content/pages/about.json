@@ -1,0 +1,49 @@
+{
+  "blocks": [
+    {
+      "_template": "hero",
+      "headlineEs": "Nuestra Historia",
+      "headlineEn": "Our Story",
+      "subheadlineEs": "De Venezuela a Fort Lauderdale, con amor",
+      "subheadlineEn": "From Venezuela to Fort Lauderdale, with love",
+      "backgroundImage": "/images/gotowhere-10.jpg"
+    },
+    {
+      "_template": "about",
+      "headingEs": "Sobre Grano De Mostaza",
+      "headingEn": "About Grano De Mostaza",
+      "textEs": "Grano De Mostaza es un restaurante familiar venezolano ubicado en Fort Lauderdale, Florida. Nuestro nombre viene de la parábola bíblica del grano de mostaza — algo pequeño que crece con fe y dedicación.\n\nNuestra cocina es 100% venezolana: arepas, empanadas, cachapas, tequeños y platos tradicionales preparados con recetas familiares auténticas. Cada ingrediente es seleccionado con cuidado para traerte el verdadero sabor de Venezuela.\n\nDesde que abrimos nuestras puertas, nos hemos dedicado a servir comida casera con el mismo amor que ponemos en nuestra propia mesa. Aquí no solo servimos comida — compartimos nuestra cultura.",
+      "textEn": "Grano De Mostaza is a family-owned Venezuelan restaurant in Fort Lauderdale, Florida. Our name comes from the biblical parable of the mustard seed — something small that grows through faith and dedication.\n\nOur kitchen is 100% Venezuelan: arepas, empanadas, cachapas, tequenos, and traditional plates prepared with authentic family recipes. Every ingredient is carefully chosen to bring you the true taste of Venezuela.\n\nSince opening our doors, we have been dedicated to serving home-cooked food with the same love we put into our own table. Here, we don't just serve food — we share our culture.",
+      "photos": [
+        "/images/gotowhere-10.jpg",
+        "/images/yelp-10-exterior-building.jpg",
+        "/images/gotowhere-8.jpg",
+        "/images/gotowhere-1.jpg"
+      ]
+    },
+    {
+      "_template": "photoStrip",
+      "images": [
+        "/images/yelp-17-sauces-arepas.jpg",
+        "/images/yelp-07-huge-empanadas.jpg",
+        "/images/yelp-12-cachapa-con-queso-cafe.jpg",
+        "/images/yelp-04-tequenos-empanadas-display.jpg"
+      ],
+      "altTexts": [
+        "Arepas with sauces",
+        "Fresh empanadas",
+        "Cachapa con queso",
+        "Tequenos display"
+      ]
+    },
+    {
+      "_template": "cta",
+      "textEs": "Ven a conocernos",
+      "textEn": "Come visit us",
+      "buttonTextEs": "Ver Menú",
+      "buttonTextEn": "View Menu",
+      "buttonUrl": "/menu",
+      "backgroundDark": false
+    }
+  ]
+}

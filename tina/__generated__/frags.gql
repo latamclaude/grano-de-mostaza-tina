@@ -1,0 +1,133 @@
+fragment PagesParts on Pages {
+  __typename
+  blocks {
+    __typename
+    ... on PagesBlocksHero {
+      headlineEs
+      headlineEn
+      subheadlineEs
+      subheadlineEn
+      backgroundImage
+      ctaTextEs
+      ctaTextEn
+      ctaUrl
+    }
+    ... on PagesBlocksMenuCategory {
+      nameEs
+      nameEn
+      descriptionEs
+      descriptionEn
+      hoursNoteEs
+      hoursNoteEn
+      photo
+      items {
+        __typename
+        name
+        descriptionEs
+        descriptionEn
+        price
+        photo
+        badges
+      }
+    }
+    ... on PagesBlocksReviews {
+      heading_es
+      heading_en
+      reviews {
+        __typename
+        quote
+        stars
+        platform
+      }
+    }
+    ... on PagesBlocksAbout {
+      headingEs
+      headingEn
+      textEs
+      textEn
+      photos
+    }
+    ... on PagesBlocksContact {
+      headingEs
+      headingEn
+      showMap
+      showForm
+    }
+    ... on PagesBlocksFaq {
+      headingEs
+      headingEn
+      items {
+        __typename
+        questionEs
+        questionEn
+        answerEs
+        answerEn
+      }
+    }
+    ... on PagesBlocksCta {
+      textEs
+      textEn
+      buttonTextEs
+      buttonTextEn
+      buttonUrl
+      backgroundDark
+    }
+    ... on PagesBlocksCatering {
+      headingEs
+      headingEn
+      descriptionEs
+      descriptionEn
+      packages {
+        __typename
+        nameEs
+        nameEn
+        descriptionEs
+        descriptionEn
+        price
+        servingSize
+      }
+    }
+    ... on PagesBlocksRatingBadges {
+      style
+    }
+    ... on PagesBlocksPhotoStrip {
+      images
+      altTexts
+    }
+  }
+}
+
+fragment SiteConfigParts on SiteConfig {
+  __typename
+  restaurantName
+  phone
+  address
+  cloverOrderUrl
+  googleMapsLat
+  googleMapsLng
+  instagram
+  facebook
+  hours {
+    __typename
+    es
+    en
+  }
+  ratings {
+    __typename
+    google {
+      __typename
+      score
+      count
+    }
+    yelp {
+      __typename
+      score
+      count
+    }
+    menupix {
+      __typename
+      score
+      count
+    }
+  }
+}

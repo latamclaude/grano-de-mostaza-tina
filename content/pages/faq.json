@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    {
+      "_template": "hero",
+      "headlineEs": "Preguntas Frecuentes",
+      "headlineEn": "Frequently Asked Questions",
+      "subheadlineEs": "Todo lo que necesitas saber",
+      "subheadlineEn": "Everything you need to know",
+      "backgroundImage": "/images/yelp-10-exterior-building.jpg"
+    },
+    {
+      "_template": "faq",
+      "headingEs": "Preguntas Frecuentes",
+      "headingEn": "FAQ",
+      "items": [
+        {
+          "questionEs": "¿Cuál es el horario del restaurante?",
+          "questionEn": "What are your hours?",
+          "answerEs": "Lunes a Viernes: 6am–3pm. Sábado: 7am–2pm. Domingo: Cerrado.",
+          "answerEn": "Monday–Friday: 6am–3pm. Saturday: 7am–2pm. Sunday: Closed."
+        },
+        {
+          "questionEs": "¿Puedo ordenar en línea?",
+          "questionEn": "Can I order online?",
+          "answerEs": "¡Sí! Puedes ordenar para recoger a través de nuestra plataforma en Clover. Haz clic en el botón 'Ordena Ahora' en cualquier página.",
+          "answerEn": "Yes! You can order for pickup through our Clover platform. Click the 'Order Now' button on any page."
+        },
+        {
+          "questionEs": "¿Tienen opciones vegetarianas?",
+          "questionEn": "Do you have vegetarian options?",
+          "answerEs": "Sí. Nuestras empanadas de champiñones, arepas de queso y cachapas con queso son opciones vegetarianas deliciosas.",
+          "answerEn": "Yes! Our mushroom empanadas, cheese arepas, and cachapas with cheese are delicious vegetarian options."
+        },
+        {
+          "questionEs": "¿Ofrecen catering?",
+          "questionEn": "Do you offer catering?",
+          "answerEs": "¡Claro que sí! Ofrecemos paquetes de catering para eventos de todos los tamaños. Llámanos al (954) 731-9838 para personalizar tu pedido.",
+          "answerEn": "Absolutely! We offer catering packages for events of all sizes. Call us at (954) 731-9838 to customize your order."
+        },
+        {
+          "questionEs": "¿Dónde están ubicados?",
+          "questionEn": "Where are you located?",
+          "answerEs": "Estamos en 5550 NW 31st Ave, Fort Lauderdale, FL 33309. Hay estacionamiento disponible.",
+          "answerEn": "We're at 5550 NW 31st Ave, Fort Lauderdale, FL 33309. Parking is available."
+        },
+        {
+          "questionEs": "¿Qué métodos de pago aceptan?",
+          "questionEn": "What payment methods do you accept?",
+          "answerEs": "Aceptamos efectivo, tarjetas de crédito/débito y pagos a través de Clover.",
+          "answerEn": "We accept cash, credit/debit cards, and payments through Clover."
+        }
+      ]
+    },
+    {
+      "_template": "cta",
+      "textEs": "¿Tienes otra pregunta?",
+      "textEn": "Have another question?",
+      "buttonTextEs": "Llámanos",
+      "buttonTextEn": "Call Us",
+      "buttonUrl": "tel:+19547319838",
+      "backgroundDark": false
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "blocks": [
+    {
+      "_template": "hero",
+      "headlineEs": "Nuestro Menú",
+      "headlineEn": "Our Menu",
+      "subheadlineEs": "Sabores venezolanos auténticos, hechos frescos cada día",
+      "subheadlineEn": "Authentic Venezuelan flavors, made fresh daily",
+      "backgroundImage": "/images/yelp-17-sauces-arepas.jpg",
+      "ctaTextEs": "Ordena Ahora",
+      "ctaTextEn": "Order Now",
+      "ctaUrl": "/menu"
+    },
+    {
+      "_template": "menuCategory",
+      "nameEs": "Empanadas",
+      "nameEn": "Empanadas",
+      "descriptionEs": "Masa de maíz rellena y frita — la favorita de todos.",
+      "descriptionEn": "Crispy fried corn dough pockets packed with savory fillings.",
+      "photo": "/images/yelp-13-empanadas-plate.jpg",
+      "items": [
+        {
+          "name": "Ropa Vieja",
+          "descriptionEs": "Carne desmechada en sofrito casero. La más pedida.",
+          "descriptionEn": "Slow-cooked shredded beef in house-made sofrito. Our #1 seller.",
+          "price": "$4.50",
+          "photo": "/images/yelp-07-huge-empanadas.jpg",
+          "badges": ["Popular"]
+        },
+        {
+          "name": "Queso",
+          "descriptionEs": "Queso blanco venezolano, cremoso y derretido.",
+          "descriptionEn": "Melted white Venezuelan cheese. Simple and perfect.",
+          "price": "$4.00",
+          "photo": "/images/yelp-14-cheese-empanada-guasacaca.jpg",
+          "badges": []
+        },
+        {
+          "name": "Pollo",
+          "descriptionEs": "Pollo desmenuzado con especias de la casa.",
+          "descriptionEn": "Seasoned shredded chicken with house spices.",
+          "price": "$4.50",
+          "photo": "/images/yelp-11-empanada-pollo.jpg",
+          "badges": []
+        },
+        {
+          "name": "Champiñones",
+          "descriptionEs": "Champiñones salteados, ideal para vegetarianos.",
+          "descriptionEn": "Sautéed mushrooms — perfect for vegetarians.",
+          "price": "$4.00",
+          "photo": "/images/yelp-13-empanadas-plate.jpg",
+          "badges": []
+        }
+      ]
+    },
+    {
+      "_template": "menuCategory",
+      "nameEs": "Arepas",
+      "nameEn": "Arepas",
+      "descriptionEs": "Pan de maíz asado relleno de tus ingredientes favoritos.",
+      "descriptionEn": "Grilled corn bread stuffed with your favorite fillings.",
+      "photo": "/images/yelp-17-sauces-arepas.jpg",
+      "items": [
+        {
+          "name": "Mechada (Carne)",
+          "descriptionEs": "Carne desmechada jugosa con queso blanco. Porción abundante.",
+          "descriptionEn": "Juicy shredded beef with white cheese. Legendary portions.",
+          "price": "$9.00",
+          "photo": "/images/yelp-17-sauces-arepas.jpg",
+          "badges": ["Popular"]
+        },
+        {
+          "name": "Queso",
+          "descriptionEs": "Solo queso blanco venezolano — clásico y reconfortante.",
+          "descriptionEn": "Simple white Venezuelan cheese — the classic comfort choice.",
+          "price": "$7.50",
+          "photo": "/images/gotowhere-4.jpg",
+          "badges": []
+        },
+        {
+          "name": "Pabellón",
+          "descriptionEs": "Carne, caraotas negras, plátano maduro y queso. La venezolana completa.",
+          "descriptionEn": "Shredded beef, black beans, sweet plantains, and cheese — the full Venezuelan experience.",
+          "price": "$10.50",
+          "photo": "/images/yelp-01-meatballs-rice-beans-plantains.jpg",
+          "badges": []
+        },
+        {
+          "name": "Pollo",
+          "descriptionEs": "Pollo desmenuzado bien sazonado.",
+          "descriptionEn": "Well-seasoned shredded chicken.",
+          "price": "$9.00",
+          "photo": "/images/yelp-09-chicken-stew.jpg",
+          "badges": []
+        }
+      ]
+    },
+    {
+      "_template": "menuCategory",
+      "nameEs": "Cachapas",
+      "nameEn": "Cachapas",
+      "descriptionEs": "Panqueques de maíz fresco, dulces y dorados.",
+      "descriptionEn": "Sweet fresh corn pancakes, golden and irresistible.",
+      "photo": "/images/yelp-12-cachapa-con-queso-cafe.jpg",
+      "items": [
+        {
+          "name": "Cachapa con Queso",
+          "descriptionEs": "Panqueque de maíz fresco con queso de mano derretido. Nuestra favorita.",
+          "descriptionEn": "Fresh corn pancake with melted hand cheese. The classic.",
+          "price": "$8.50",
+          "photo": "/images/yelp-12-cachapa-con-queso-cafe.jpg",
+          "badges": []
+        },
+        {
+          "name": "Cachapa con Cochino",
+          "descriptionEs": "Cachapa rellena de pernil de cerdo desmenuzado.",
+          "descriptionEn": "Sweet corn pancake filled with pulled pork.",
+          "price": "$10.00",
+          "photo": "/images/yelp-18-cachapas.jpg",
+          "badges": []
+        },
+        {
+          "name": "Cachapa con Pollo",
+          "descriptionEs": "Cachapa con pollo suave y especiado.",
+          "descriptionEn": "Corn pancake with seasoned shredded chicken.",
+          "price": "$9.50",
+          "photo": "/images/gotowhere-2.jpg",
+          "badges": []
+        }
+      ]
+    },
+    {
+      "_template": "menuCategory",
+      "nameEs": "Tequeños",
+      "nameEn": "Tequenos",
+      "descriptionEs": "Palitos de queso envueltos en masa y fritos hasta dorar.",
+      "descriptionEn": "Cheese sticks wrapped in dough and fried to golden perfection.",
+      "photo": "/images/yelp-04-tequenos-empanadas-display.jpg",
+      "items": [
+        {
+          "name": "Tequeños Clásicos (6)",
+          "descriptionEs": "Seis tequeños de queso blanco, dorados y crujientes.",
+          "descriptionEn": "Six golden crispy white cheese sticks. Impossible to eat just one.",
+          "price": "$6.00",
+          "photo": "/images/yelp-04-tequenos-empanadas-display.jpg",
+          "badges": []
+        },
+        {
+          "name": "Tequeños con Guayaba (6)",
+          "descriptionEs": "Queso blanco y mermelada de guayaba — dulce y salado.",
+          "descriptionEn": "White cheese with guava jam — sweet and savory in perfect balance.",
+          "price": "$7.00",
+          "photo": "/images/placeholder-tequenos-closeup.jpg",
+          "badges": []
+        },
+        {
+          "name": "Tequeños (12)",
+          "descriptionEs": "Docena para compartir o para guardártelos todos.",
+          "descriptionEn": "A dozen to share — or to keep for yourself. No judgment.",
+          "price": "$11.00",
+          "photo": "/images/yelp-08-tequenos-empanadas-counter.jpg",
+          "badges": []
+        }
+      ]
+    },
+    {
+      "_template": "menuCategory",
+      "nameEs": "Desayunos",
+      "nameEn": "Breakfast",
+      "descriptionEs": "Empieza el día con el sabor de Venezuela.",
+      "descriptionEn": "Start your day with the taste of Venezuela.",
+      "hoursNoteEs": "Disponible Lun–Vie 6am–11am, Sáb 7am–11am",
+      "hoursNoteEn": "Served Mon–Fri 6am–11am, Sat 7am–11am",
+      "photo": "/images/gotowhere-5.jpg",
+      "items": [
+        {
+          "name": "Perico",
+          "descriptionEs": "Huevos revueltos venezolanos con cebolla, tomate y ají dulce.",
+          "descriptionEn": "Venezuelan scrambled eggs with onion, tomato, and sweet pepper.",
+          "price": "$7.00",
+          "photo": "/images/gotowhere-5.jpg",
+          "badges": []
+        },
+        {
+          "name": "Combo Desayuno Arepa",
+          "descriptionEs": "Arepa + perico + café con leche. El combo perfecto.",
+          "descriptionEn": "Arepa + perico + café con leche. The perfect morning combo.",
+          "price": "$11.50",
+          "photo": "/images/gotowhere-7.jpg",
+          "badges": []
+        },
+        {
+          "name": "Café con Leche",
+          "descriptionEs": "Café venezolano fuerte con leche cremosa.",
+          "descriptionEn": "Strong Venezuelan coffee with creamy milk. The real deal.",
+          "price": "$3.00",
+          "photo": "/images/yelp-02-cafe-con-leche.jpg",
+          "badges": []
+        },
+        {
+          "name": "Jugo Natural",
+          "descriptionEs": "Jugo fresco del día. Pregunta al personal.",
+          "descriptionEn": "Fresh-squeezed juice of the day. Ask your server.",
+          "price": "$3.50",
+          "badges": []
+        }
+      ]
+    },
+    {
+      "_template": "menuCategory",
+      "nameEs": "Almuerzos",
+      "nameEn": "Lunch Specials",
+      "descriptionEs": "Platos completos servidos al mediodía.",
+      "descriptionEn": "Full plates served at midday.",
+      "hoursNoteEs": "Disponible Lun–Vie 11am–3pm, Sáb 11am–2pm",
+      "hoursNoteEn": "Served Mon–Fri 11am–3pm, Sat 11am–2pm",
+      "photo": "/images/yelp-05-lunch-special.jpg",
+      "items": [
+        {
+          "name": "Pabellón Criollo",
+          "descriptionEs": "Carne desmechada, caraotas negras, arroz blanco y plátano maduro.",
+          "descriptionEn": "Shredded beef, black beans, white rice, and sweet plantains. Venezuela's national dish.",
+          "price": "$13.00",
+          "photo": "/images/yelp-01-meatballs-rice-beans-plantains.jpg",
+          "badges": []
+        },
+        {
+          "name": "Pollo a la Plancha",
+          "descriptionEs": "Pechuga de pollo asada con arroz, caraotas y ensalada.",
+          "descriptionEn": "Grilled chicken breast with rice, beans, and salad.",
+          "price": "$12.00",
+          "photo": "/images/yelp-05-lunch-special.jpg",
+          "badges": []
+        },
+        {
+          "name": "Pescado Frito",
+          "descriptionEs": "Pescado frito del día con arroz, caraotas y tostones.",
+          "descriptionEn": "Fresh fried fish of the day with rice, beans, and tostones.",
+          "price": "$14.00",
+          "photo": "/images/yelp-20-food-curry.jpg",
+          "badges": []
+        }
+      ]
+    },
+    {
+      "_template": "menuCategory",
+      "nameEs": "Combos para Fiestas",
+      "nameEn": "Party Packs",
+      "descriptionEs": "Paquetes grandes para eventos y celebraciones.",
+      "descriptionEn": "Large packs for events and celebrations.",
+      "items": [
+        {
+          "name": "Pack de Empanadas (24)",
+          "descriptionEs": "24 empanadas surtidas. Perfecto para 8–12 personas.",
+          "descriptionEn": "24 assorted empanadas. Perfect for 8–12 guests.",
+          "price": "Desde $45",
+          "badges": []
+        },
+        {
+          "name": "Pack de Tequeños (50)",
+          "descriptionEs": "50 tequeños dorados con salsas. Ideal para 15–20 personas.",
+          "descriptionEn": "50 golden tequenos with dipping sauces. For 15–20 guests.",
+          "price": "Desde $35",
+          "badges": []
+        },
+        {
+          "name": "Paquete de Catering Completo",
+          "descriptionEs": "Menú venezolano completo para 20+ personas. Personalizable.",
+          "descriptionEn": "Full Venezuelan spread for 20+ guests. Customizable.",
+          "price": "Desde $75/persona",
+          "badges": []
+        }
+      ]
+    },
+    {
+      "_template": "cta",
+      "textEs": "¿Listo para ordenar?",
+      "textEn": "Ready to order?",
+      "buttonTextEs": "Ordena en Línea",
+      "buttonTextEn": "Order Online",
+      "buttonUrl": "/menu",
+      "backgroundDark": true
+    }
+  ]
+}

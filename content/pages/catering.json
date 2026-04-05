@@ -1,0 +1,54 @@
+{
+  "blocks": [
+    {
+      "_template": "hero",
+      "headlineEs": "Catering Venezolano",
+      "headlineEn": "Venezuelan Catering",
+      "subheadlineEs": "Lleva el sabor de Venezuela a tu próximo evento",
+      "subheadlineEn": "Bring the taste of Venezuela to your next event",
+      "backgroundImage": "/images/placeholder-catering-spread.jpg"
+    },
+    {
+      "_template": "catering",
+      "headingEs": "Paquetes de Catering",
+      "headingEn": "Catering Packages",
+      "descriptionEs": "Ofrecemos opciones personalizables para fiestas, eventos corporativos y celebraciones familiares. Todos nuestros platos son preparados frescos el mismo día.",
+      "descriptionEn": "We offer customizable options for parties, corporate events, and family celebrations. All our dishes are prepared fresh on the day of your event.",
+      "packages": [
+        {
+          "nameEs": "Pack de Empanadas (24)",
+          "nameEn": "Empanada Pack (24)",
+          "descriptionEs": "24 empanadas surtidas con salsas. Perfecto para reuniones pequeñas.",
+          "descriptionEn": "24 assorted empanadas with dipping sauces. Perfect for small gatherings.",
+          "price": "Desde $45",
+          "servingSize": "8–12 personas"
+        },
+        {
+          "nameEs": "Pack de Tequeños (50)",
+          "nameEn": "Tequenos Pack (50)",
+          "descriptionEs": "50 tequeños dorados con salsas variadas.",
+          "descriptionEn": "50 golden tequenos with assorted dipping sauces.",
+          "price": "Desde $35",
+          "servingSize": "15–20 personas"
+        },
+        {
+          "nameEs": "Paquete Completo",
+          "nameEn": "Full Catering Package",
+          "descriptionEs": "Menú venezolano completo: empanadas, arepas, tequeños, platos principales, bebidas y postres. Totalmente personalizable.",
+          "descriptionEn": "Complete Venezuelan spread: empanadas, arepas, tequenos, main dishes, beverages, and desserts. Fully customizable.",
+          "price": "Desde $75/persona",
+          "servingSize": "20+ personas"
+        }
+      ]
+    },
+    {
+      "_template": "cta",
+      "textEs": "¿Planificando un evento?",
+      "textEn": "Planning an event?",
+      "buttonTextEs": "Llámanos: (954) 731-9838",
+      "buttonTextEn": "Call Us: (954) 731-9838",
+      "buttonUrl": "tel:+19547319838",
+      "backgroundDark": true
+    }
+  ]
+}

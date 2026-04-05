@@ -1,0 +1,28 @@
+{
+  "blocks": [
+    {
+      "_template": "hero",
+      "headlineEs": "Contáctanos",
+      "headlineEn": "Contact Us",
+      "subheadlineEs": "Estamos aquí para servirte",
+      "subheadlineEn": "We're here to serve you",
+      "backgroundImage": "/images/yelp-10-exterior-building.jpg"
+    },
+    {
+      "_template": "contact",
+      "headingEs": "Visítanos",
+      "headingEn": "Visit Us",
+      "showMap": true,
+      "showForm": true
+    },
+    {
+      "_template": "cta",
+      "textEs": "¿Prefieres ordenar en línea?",
+      "textEn": "Prefer to order online?",
+      "buttonTextEs": "Ordena Ahora",
+      "buttonTextEn": "Order Now",
+      "buttonUrl": "/menu",
+      "backgroundDark": true
+    }
+  ]
+}

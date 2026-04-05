@@ -1,0 +1,75 @@
+{
+  "blocks": [
+    {
+      "_template": "hero",
+      "headlineEs": "Sabor Venezolano",
+      "headlineEn": "Venezuelan Flavor",
+      "subheadlineEs": "Comida auténtica hecha con amor — como en casa",
+      "subheadlineEn": "Authentic home-cooked food — made with love",
+      "backgroundImage": "/images/yelp-17-sauces-arepas.jpg",
+      "ctaTextEs": "Ordena Ahora",
+      "ctaTextEn": "Order Now",
+      "ctaUrl": "/es/menu"
+    },
+    {
+      "_template": "ratingBadges"
+    },
+    {
+      "_template": "menuCategory",
+      "nameEs": "Empanadas",
+      "nameEn": "Empanadas",
+      "descriptionEs": "Masa de maíz rellena y frita — la favorita de todos.",
+      "descriptionEn": "Crispy fried corn dough pockets packed with savory fillings.",
+      "photo": "/images/yelp-13-empanadas-plate.jpg",
+      "items": [
+        {
+          "name": "Ropa Vieja",
+          "descriptionEs": "Carne desmechada en sofrito casero. La más pedida.",
+          "descriptionEn": "Slow-cooked shredded beef in house-made sofrito. Our #1 seller.",
+          "price": "$4.50",
+          "photo": "/images/yelp-07-huge-empanadas.jpg",
+          "badges": ["Popular"]
+        },
+        {
+          "name": "Queso",
+          "descriptionEs": "Queso blanco venezolano, cremoso y derretido.",
+          "descriptionEn": "Melted white Venezuelan cheese. Simple and perfect.",
+          "price": "$4.00",
+          "photo": "/images/yelp-14-cheese-empanada-guasacaca.jpg",
+          "badges": []
+        }
+      ]
+    },
+    {
+      "_template": "reviews",
+      "heading_es": "Lo Que Dicen Nuestros Clientes",
+      "heading_en": "What Our Customers Say",
+      "reviews": [
+        {
+          "quote": "Best empanada you're ever going to find — ropa vieja empanadas",
+          "stars": 5,
+          "platform": "Google"
+        },
+        {
+          "quote": "Shredded beef arepa was so delicious, portion out of this world",
+          "stars": 5,
+          "platform": "Yelp"
+        },
+        {
+          "quote": "Feel good place — authentic homemade food. Friendly staff, treat you like family",
+          "stars": 5,
+          "platform": "Google"
+        }
+      ]
+    },
+    {
+      "_template": "cta",
+      "textEs": "¿Listo para probar?",
+      "textEn": "Ready to try?",
+      "buttonTextEs": "Ordena Ahora",
+      "buttonTextEn": "Order Now",
+      "buttonUrl": "/menu",
+      "backgroundDark": true
+    }
+  ]
+}
